@@ -35,7 +35,7 @@ db.blogs = require("./blogModel.js")(sequelize, DataTypes);
 
 
 
-db.sequelize.sync({ force: false }).then(() => {
+db.sequelize.sync({ force: false }).then(() => { //jhukkera ni true garyo bhane sab existing data delete huncha
   console.log("yes re-sync done");
 });
 
